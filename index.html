@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio to present my skills as a front-end developer.">
+    <meta name="keywords" content="Portfolio, CV, projects, curriculum vitae, LuizFelipeAK">
+    <meta name="author" content="Luiz Felipe A. K.">
+
+    <title>Hi! My name is Luiz Felipe A. K.</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <button id="nav-btn" aria-controls="mobile-navigation" aria-label="Navigation menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                        <path fill="currentColor" d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z"/>
+                    </svg>
+                </button>
+                
+                <a href="index.html" class="nav-logo" aria-label="Link to home page">
+                    <svg width="4rem" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M461 256C461 368.867 369.017 460 256 460C198.314 460 146.107 436.257 108.816 398H79.7272H68H63.2728L71.5 386L71.5444 386.065L83.4265 366.168C62.9108 334.415 51 296.615 51 256C51 143.133 142.983 52 256 52C369.017 52 461 143.133 461 256ZM75.6136 392L75.2795 391.513L87.12 371.685C92.0504 378.797 97.4226 385.582 103.197 392H75.6136ZM156.762 392C136.67 377.487 119.918 358.681 107.87 336.938L153.815 260H237V346H153V352H237L237 392H156.762ZM237 254H157.398L237 120.703V254ZM237 106L237 109L205.947 161H187V167H202.364L104.594 330.721C93.3328 308.215 87 282.843 87 256C87 190.389 124.835 133.563 180 105.905V106L237 106ZM165.648 398C191.78 414.466 222.77 424 256 424C289.23 424 320.22 414.466 346.352 398H256.04V249.769L358.574 389.528C398.954 358.828 425 310.438 425 256C425 198.672 396.115 148.051 352.024 117.734L256.25 248.625V100H318.846C299.419 92.2589 278.21 88 256 88C233.79 88 212.581 92.2589 193.154 100L252 100L252 105L252 106L252 398.002H246V167H243V398H237H165.648ZM243 161H246V106H243V161Z" fill="currentColor"/>
+                    </svg>
+                </a>
+
+                <ul class="navbar">
+                    <li>
+                        <a href="#about" id="about-menu">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" id="projects-menu">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contact-menu">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul data-state="closed" class="mobile-navigation" id="mobile-navigation">
+                <li>
+                    <a href="#about" id="modal-about-menu">About</a>
+                </li>
+                <li>
+                    <a href="#projects" id="modal-projects-menu">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" id="modal-contact-menu">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="photo">
+                <img src="assets/imgs/profile.webp" alt="Profile picture of Luiz Felipe A. K.">
+            </div>
+            <div class="about-header">
+                <h1 class="name">Hi! My name is Luiz Felipe A. K.</h1>
+                <p class="info">
+                    I'm a Front-End Developer who lives in Brazil. My focus is on creating simple, yet stylish responsive websites.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-info">
+                <h2 class="projects-title">Projects</h2>
+                <p class="projects-msg">
+                    The projects are made using HTML, CSS, and Javascript.
+                </p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project">
+                    <a href="" target="_blank" rel="noopener">
+                        <img src="assets/imgs/green-encyclopedia.webp" alt="Image of website green encyclopedia, it displays the basic information about a few plants based on its category.">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="" target="_blank" rel="noopener">
+                        <img src="assets/imgs/iframe.webp" alt="Image of website iframe, a place to search for information about current events, conservation, fishing and mining.">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="" target="_blank" rel="noopener">
+                        <img src="assets/imgs/sample.webp" alt="Image of a sample website developed to show a modern layout.">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <p class="contact-msg">
+                Are you interested in doing a project or have any questions? Please feel free to contact me.
+            </p>
+            <address class="socials">
+                <a href="https://www.fiverr.com/luizfelipeak" target="_blank" rel="noopener" aria-label="Link for my Fiverr profile page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+                        <circle cx="24" cy="24" r="20" fill="#66bb6a"/>
+                        <path fill="#fff" d="M35.066,22.035v-0.959h-1.821l-0.8-0.014c-0.684,0-1.151,0.45-1.335,0.974v-0.959h-2.039V27.3 h2.039v-1.334v-2.066c0-0.62,0.503-1.123,1.123-1.123h0.795v4.523h2.039v-1.334v-2.066c0-0.62,0.503-1.123,1.123-1.123h1.012v-1.7 l-0.8-0.014C35.718,21.061,35.25,21.512,35.066,22.035z M20.56,21.206l-1.094,3.597l-1.093-3.597h-2.039l2.215,6.223h0.12h1.597 h0.12l2.213-6.223H20.56z M12.23,21.206v-0.415c0-0.364,0.294-0.658,0.658-0.658h1.287v-1.706h-1.767 c-1.223,0-2.216,0.991-2.216,2.216v0.564H9v1.649h1.192v4.572h2.039v-4.572h1.944v4.572h2.039v-4.572v-1.649h-2.039H12.23V21.206z M25.424,21.122h-0.248c-1.67,0-3.024,1.354-3.024,3.024v0.342c0,1.67,1.354,3.024,3.024,3.024h0.552 c1.143,0,2.122-0.706,2.524-1.705l-1.798-0.525c0,0-0.215,0.616-0.965,0.616c-0.847,0-1.295-0.463-1.354-0.989l0,0v-0.003 c-0.004-0.038-0.006-0.077-0.006-0.115h2.3h2.022v-0.643C28.448,22.476,27.094,21.122,25.424,21.122z M24.13,23.59 c0.025-0.559,0.485-1.006,1.051-1.006h0.194c0.565,0,1.026,0.446,1.051,1.006H24.13z"/>
+                        <circle cx="38.852" cy="26.305" r="1.268" fill="#263238"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/luiz-felipe-a-k/" target="_blank" rel="noopener" aria-label="Link for my LinkedIn profile page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" viewBox="0 0 512 512" focusable="false" aria-hidden="true">
+                        <path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <span class="footer-copyright">&copy;2022 Luiz Felipe A. K. All rights reserved.</span>
+
+        <span>
+            <a target="_blank" href="https://icons8.com/icon/ngc6JsBomclm/fiverr" rel="noopener">Fiverr</a> icon by <a target="_blank" href="https://icons8.com" rel="noopener">Icons8</a>
+        </span>
+    </footer>
+
+    <script type="text/javascript" src="config.js" type="module"></script>
+</body>
+</html>
